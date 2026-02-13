@@ -41,7 +41,6 @@ public class Account {
         if(amount < 0)
             throw new IllegalArgumentException("Invalid amount: " + amount + "Must be greater than 0.");
 
-
     }
 
     /**
@@ -51,14 +50,16 @@ public class Account {
      */
     public void withdrawal(double amount){
         if(amount < 0)
-            throw new IllegalArgumentException("Invalid amount: " + amount + "Must be greater than 0.");
+            throw new IllegalArgumentException("Invalid amount: " + amount + " Must be greater than 0.");
         else if(amount > balance)
-            throw new IllegalArgumentException("Invalid amount: " + amount + "Cannot be greater than the account balance: "+ balance);
-
-
+            throw new IllegalArgumentException("Invalid amount: " + amount + " Cannot be greater than the account balance: "+ balance);
+    }
+    public String toString(){
+        String name;
+        name = firstName + lastName;
+        return name;
 
     }
-
     /**
      * Gets id.
      *
@@ -93,15 +94,6 @@ public class Account {
      */
     public double getBalance() {
         return balance;
-    }
-
-    /**
-     * Sets balance.
-     *
-     * @param balance the balance
-     */
-    public void setBalance(double balance) {
-        this.balance = balance;
     }
 
     /**
@@ -144,5 +136,6 @@ public class Account {
         if (firstName == null || firstName.isEmpty())
             throw new IllegalArgumentException("Invalid first name! Name can't be blank for id: " + id);
         else
-            this.firstName = firstName;    }
+            this.firstName = firstName;
+    }
 }
