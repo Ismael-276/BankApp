@@ -56,11 +56,9 @@ public class Account {
             throw new IllegalArgumentException("Invalid amount: " + amount + " Cannot be greater than the account balance: "+ balance);
         balance -= amount;
     }
+    @Override
     public String toString(){
-        String name;
-        name = firstName + lastName;
-        return name;
-
+        return "ID #" + id + ": " + firstName + " " + lastName;
     }
     /**
      * Gets id.
