@@ -115,6 +115,7 @@ public class BankApp {
     } // end of makeDeposit
 
     /**
+     *
      * Make a withdrawal from the account.
      * @param account The account to make a withdrawal from.
      */

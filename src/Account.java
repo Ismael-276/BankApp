@@ -40,6 +40,7 @@ public class Account {
     public void deposit(double amount){
         if(amount < 0)
             throw new IllegalArgumentException("Invalid amount: " + amount + "Must be greater than 0.");
+        balance += amount;
 
     }
 
@@ -53,6 +54,7 @@ public class Account {
             throw new IllegalArgumentException("Invalid amount: " + amount + " Must be greater than 0.");
         else if(amount > balance)
             throw new IllegalArgumentException("Invalid amount: " + amount + " Cannot be greater than the account balance: "+ balance);
+        balance -= amount;
     }
     public String toString(){
         String name;
