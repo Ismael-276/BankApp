@@ -3,7 +3,7 @@
  */
 public class Account {
     private static int lastId = 0;
-    private final int id = lastId++;
+    private final int id = ++lastId;
     private String firstName;
     private String lastName;
     private double balance;
@@ -28,8 +28,8 @@ public class Account {
      */
     public Account(String firstName, String lastName){
         this();
-        this.firstName = firstName;
-        this.lastName = lastName;
+        setFirstName(firstName);
+        setLastName(lastName);
     }
 
     /**
@@ -39,7 +39,7 @@ public class Account {
      */
     public void deposit(double amount){
         if(amount < 0)
-            throw new IllegalArgumentException("Invalid amount: " + amount + "Must be greater than 0.");
+            throw new IllegalArgumentException("Invalid amount: " + amount + " Must be greater than 0.");
         balance += amount;
 
     }
