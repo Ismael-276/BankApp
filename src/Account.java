@@ -3,7 +3,7 @@
  */
 public class Account {
     private static int lastId = 0;
-    private final int id = ++lastId;
+    private final int id;
     private String firstName;
     private String lastName;
     private double balance;
@@ -14,9 +14,10 @@ public class Account {
      */
     public Account(){
 
-        firstName = "unknown";
-        lastName = "unknown";
+        setFirstName("unknown");
+        setLastName("unknown");
         balance = 0;
+        id = ++lastId;
 
     }
 
@@ -27,9 +28,12 @@ public class Account {
      * @param lastName  the last name
      */
     public Account(String firstName, String lastName){
-        this();
+
         setFirstName(firstName);
         setLastName(lastName);
+        balance = 0;
+        id = ++lastId;
+
     }
 
     /**
