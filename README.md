@@ -14,4 +14,6 @@
  - Generating javadocs - Same concepts as the setters/getters but the only difference is that you have to install a program that allows the generation of javadocs.
  - Throwing errors - Adding errors inside the setters to validate input and send out a message with invalid input.
 ## Screenshot of Output
-!("C:\Users\Ismae\OneDrive\Pictures\Screenshots\Screenshot 2026-02-15 174409.png")
+<img width="463" height="400" alt="Screenshot 2026-02-15 174409" src="https://github.com/user-attachments/assets/a231f3d6-3245-45fc-a424-d11033b3e65e" />
+<img width="445" height="400" alt="Screenshot 2026-02-15 174403" src="https://github.com/user-attachments/assets/f952295d-22e3-4532-97cd-c7f9ae6e3ae1" />
+
